@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <table>
+      <tr>
+        Kode
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+      </tr>
+      <tr>
+        Barang
+        <td>Barang A</td>
+        <td>Barang B</td>
+        <td>Barang C</td>
+      </tr>
+      <tr>
+        Harga
+        <td>10.000</td>
+        <td>20.000</td>
+        <td>30.000</td>
+      </tr>
+    </table>
+
+    <form id="todoForm">
+      <label for="task">Masukan Kode:</label>
+      <input type="text" id="kode" name="task" required />
+      <label for="task">Banyak Barang</label>
+      <input type="text" id="task" name="task" required />
+      <button type="button" onclick="addTask()">Tambah</button>
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
